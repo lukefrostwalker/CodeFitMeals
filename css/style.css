@@ -47,7 +47,38 @@ i {
 .secondary {
     color: #72a638 !important;
 }
+/*  */
+/* NAVIGATION BAR */
+/*  */
+.navbar-brand, .nav-link {
+    color: #1C4D01;
+}
+.link_animation {
+    display: inline-block;
+    position: relative;
+    color: #1C4D01;
+    /* color: #0087ca; */
+}
+.link_animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1C4D01;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
 
+.link_animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/*  */
+/* HERO */
+/*  */
 .masthead .masthead_image {
     background: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%), url(../images/hero.jpg) no-repeat center center scroll;    
     background-size: cover;
@@ -122,6 +153,7 @@ i {
 }
 .city-feature a {
     text-decoration: none;
+    color: #72a638;
 }
 /*  */
 /* SECTION TESTIMONIALS */
