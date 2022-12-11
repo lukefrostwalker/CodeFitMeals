@@ -12,7 +12,35 @@ html {
 /* img {
     max-width: 100%;
     display: block;
-} */
+}
+/* Start Navigation Bar Style */
+.navbar-brand, .nav-link {
+  color: #1C4D01;
+}
+.link_animation {
+  display: inline-block;
+  position: relative;
+  color: #1C4D01;
+}
+.link_animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1C4D01;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link_animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* End Navigation Bar Style */
+
 /* Start Header Style */
 .hero {
     background-image: url(../images/fourth.jpg);
@@ -261,7 +289,4 @@ p {
 	background: none;
 	border: none;
 	outline: none;
-}
-.fa-facebook-messenger {
-	color: white !important;
 }
