@@ -13,10 +13,11 @@
   </head>
   <body>
         <header>
-            <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
+<!--    End Navigation Bar      -->
+            <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top p-0 fw-bold">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="Bootstrap" width="50" height="50"> CodeFitMeals
+                        <img src="images/logo.png" alt="Bootstrap" width="50" height="55"> CodeFitMeals
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <span class="navbar-toggler-icon"></span></button>
@@ -29,14 +30,17 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav ms-auto">
                                 <li class="link_animation nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="link_animation nav-item"><a class="nav-link" href="cutomMeal.html">Meal Plan</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="cutomMeal.html">MealPlan</a></li>
                                 <li class="link_animation nav-item"><a class="nav-link" href="faq.html">FAQS</a></li>
                                 <li class="link_animation nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="link_animation nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                <li class="link_animation nav-item"><a class="nav-link" href="form.html">My Account</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
+<!--    End Navigation Bar      -->
         </header>
 
         <div class="title_page text-center">
@@ -66,7 +70,7 @@
                 </li>
             </ul>
 
-            <div class="tab-content border" id="myTabContent">
+            <div class="tab-content border border-success p-2" id="myTabContent">
                 <!------------------------------------------------------ DECEMBER  -->
                 <div class="tab-pane fade show active" id="december-tab-pane" role="tabpanel" aria-labelledby="december-tab" tabindex="0">
                     <table>
@@ -204,9 +208,9 @@
     <section class="details container" id="details">
             <div class="col-md-12 border">
                 <div class="parent-box">
-                        <div class="order-total mb-3">
+                        <div class="order-total mb-3 border border-success p-2">
                         <b>Order Total</b>
-                        <div class="order-total-details-box border">
+                        <div class="order-total-details-box border border border-success">
                             <div class="d-flex">
                                 <div class="px-2 w-100">
                                     Subtotal
@@ -239,6 +243,60 @@
                 </div>
             </div>
     </section>
+
+<!-- Start Footer Section -->
+    <footer class="d-flex flex-column justify-content-center align-items-center mt-4">
+        <div class="row container p-0">
+            <div class="col">
+                <ul class="footer-nav d-flex gap-3">
+                <li><a href="faq.html">FAQS</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="cutomMeal.html">Meal Plan</a></li>
+                <li><a href="form.html">My Account</a></li>
+                <li><a href="https://www.apple.com/ph/app-store/">iOS App</a></li>
+                <li><a href="https://play.google.com/store/apps/?hl=en&gl=US">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="social-links d-flex gap-5 justify-content-end">
+                <li><a href="https://www.facebook.com/profile.php?id=100088163962493"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                <li><a href="https://twitter.com/code_fit"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                <li><a href="https://www.instagram.com/codefitmeals/"><i class="fa-brands fa-instagram fa-2xl"></i></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center mt-4 container text-white p-0">
+            <p>
+                Copyright &copy; 2022 by Code Fit Meals. All rights reserved.
+            </p>
+        </div>
+    </footer>
+<!-- End Footer Section -->
+
+   <!-- Start Message Bot -->
+   <div class="chatboxContainer">
+    <div class="chatboxLogo"><i class="fa-brands fa-facebook-messenger text-white"></i></div>
+    <div class="messageContainer">
+      <div class="chatbox-message-header messageHeader">
+        <div class="messageLogo">
+          <img src="images/logo-black.png" alt="" class="imgLogo">
+          <div>
+            <h4 class="messageName">CodeFit Meals</h4>
+            <p class="messageStatus">online</p>
+          </div>
+        </div>
+      </div>
+      <div class="messageContent"><h4 class="messageNoMessage">Feeling hungry? Chat with us!</h4></div>
+      <div class="messageType">
+        <form action="#" class="messageForm">
+          <input rows="1" placeholder="Type your message..." class="messageInput">
+          <button type="submit" class="messageSubmit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Message Bot -->
 
 <!--
     TO ANOTHER PAGE

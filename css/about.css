@@ -2,6 +2,9 @@
     font-family: "Rubik", sans-serif;
 }
 /* Start Navigation Bar Style */
+nav a:hover {
+  color: #72a638 !important;
+}
 .navbar-brand, .nav-link {
   color: #1C4D01;
 }
@@ -22,10 +25,12 @@
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
 .link_animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.active {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 /*  */
 /* ABOUT US */
@@ -120,6 +125,32 @@ i:hover {
   .card:hover .img-container {
     transform: scale(1.15);
   }
+  /*  */
+/* FOOTER */
+/*  */
+footer {
+  padding-top: 50px;
+  background-color: #333;
+}
+footer li {
+  list-style: none;
+  text-decoration: none;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: #72a638;
+}
+footer i {
+color: #7fb83e !important;
+}
+footer i:hover {
+  color: white;
+}
+
+
   @media screen and (min-width: 768px) {
     section {
       padding: 1em 7em;
