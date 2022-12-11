@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://kit.fontawesome.com/c636ad103d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <!-- Start Navigation Bar Section -->
+  <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Bootstrap" width="50" height="50"> CodeFitMeals
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+        <span class="navbar-toggler-icon"></span></button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-header">
+                <img src="images/logo.png" alt="Bootstrap" width="50" height="50">
+                <h5 class="offcanvas-title colored" id="offcanvasNavbarLabel">CodeFitMeals</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto">
+                    <li class="link_animation nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="link_animation nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="link_animation nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="link_animation nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+  <!-- Start Navigation Bar Section -->
+
+  <!-- Start Log-in Section -->
+  <section class="loginSection">
+    <h3>Login</h3>
+    <form action="#" method="" class="formSection">
+      <div class="sectionContainer emailSection">
+        <div class="inputSection input-group"><input type="text" placeholder="Email Address" class="emailInput form-control"></div>
+        <span class="error errorMessage">Required</span>
+      </div>
+
+      <div class="sectionContainer passwordSection">
+        <div class="inputSection input-group"><input type="password" placeholder="Password" class="passwordInput form-control"></div>
+        <span class="error errorMessage">Required</span>
+      </div>
+
+      <div class="passForgot"><a href="#">Forgot password?</a></div>
+      <div class="checkbox-content">
+        <input type="checkbox" id="logCheck">
+        <label for="logCheck" class="text">Remember me</label>
+    </div>
+      <div class="inputButton"><input type="submit" value="Login" class="inputBtn"></div>
+    </form>
+
+    <div class="optiontext">or</div>
+
+    <div class="optionApps">
+      <div class="optionApp"><a href="#"><i class="fa-brands fa-facebook"></i> Log in with Facebook</a></div>
+      <div class="optionApp"><a href="#"><i class="fa-brands fa-google"></i> Log in with Google</a></div>
+    </div>
+  </section>
+  <!-- End Log-in Section -->
+
+  <!--  Start Register Section -->
+  <section class="registerSection">
+    <h3>Register</h3>
+    <form action="#" method="" class="formSection">
+      <div class="sectionContainer emailSection">
+        <div class="inputSection input-group"><input type="text" placeholder="Email Address" class="emailInput form-control"></div>
+        <span class="error errorMessage">Required</span>
+      </div>
+
+    <div>A registration form will be sent to your email.</div>
+
+      <div class="inputButton"><input type="submit" value="Register" class="inputBtn"></div>
+    </form>
+  </section>
+  <!-- End Register Section -->
+
+  <!-- Start Message Bot -->
+  <div class="chatboxContainer">
+    <div class="chatboxLogo"><i class="fa-brands fa-facebook-messenger"></i></div>
+    <div class="messageContainer">
+      <div class="chatbox-message-header messageHeader">
+        <div class="messageLogo">
+          <img src="images/logo-black.png" alt="" class="imgLogo">
+          <div>
+            <h4 class="messageName">CodeFit Meals</h4>
+            <p class="messageStatus">online</p>
+          </div>
+        </div>
+      </div>
+      <div class="messageContent"><h4 class="messageNoMessage">Feeling hungry? Chat with us!</h4></div>
+      <div class="messageType">
+        <form action="#" class="messageForm">
+          <input rows="1" placeholder="Type your message..." class="messageInput">
+          <button type="submit" class="messageSubmit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Message Bot -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
