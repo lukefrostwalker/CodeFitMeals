@@ -1,0 +1,138 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+} 
+
+body {
+    padding-top: 10px;
+    width: 100%;
+    height: 100vh;
+}
+/* Start Navigation Bar Style */
+nav a:hover {
+    color: #72a638 !important;
+  }
+  .navbar-brand, .nav-link {
+    color: #1C4D01;
+  }
+  .link_animation {
+    display: inline-block;
+    position: relative;
+    color: #1C4D01;
+  }
+  .link_animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1C4D01;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .link_animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .navbar-nav .active {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  nav a:hover {
+    list-style: none;
+    text-decoration: none;
+  }
+  /* End Navigation Bar Style */
+/* Start Check Out Form Style */
+.containere {
+    padding-top: 75px;
+
+}
+.form {
+    padding: 0 30px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: #d9ebc7;
+}
+h3 {
+    text-align: center;
+    color: #7fb83e;
+}
+/* .row1 {
+    padding: 20px;
+} */
+label {
+    display: block;
+}
+input{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #7fb83e;
+    border-radius: 5px;
+}
+.inputLabel {
+    color: #7fb83e;
+}
+.inputBorder {
+    margin-bottom: 15px;
+}
+.icon {
+    color: #7fb83e;
+}
+.paymentContainer {
+    margin: 10px 0;
+    cursor: pointer;
+}
+img {
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+}
+hr {
+    border: 1px solid lightgrey;
+  }
+span.price {
+    float: right;
+    color: grey;
+}
+.checkoutBtn {
+    /* width: 300px; */
+    border: 1.5px solid #7fb83e;
+    border-radius: 30px;
+    padding: 10px 40px ;
+    background-color: #fff;
+    color: #7fb83e;
+}
+.checkoutBtn:hover {
+    background-color: #7fb83e;
+    color: #FFF;
+}
+/* End Check Out Form Style */
+/*  */
+/* FOOTER */
+/*  */
+footer {
+    padding-top: 50px;
+    background-color: #333;
+  }
+  footer li {
+    list-style: none;
+    text-decoration: none;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover {
+    color: #72a638;
+  }
+  footer i {
+    color: #72a638;
+  }
+  footer i:hover {
+    color: white;
+  }
