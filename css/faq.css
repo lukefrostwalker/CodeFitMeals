@@ -9,10 +9,10 @@
 html {
     scroll-behavior: smooth;
 }
-img {
+/* img {
     max-width: 100%;
     display: block;
-}
+} */
 /* Start Header Style */
 .hero {
     background-image: url(../images/fourth.jpg);
@@ -261,4 +261,7 @@ p {
 	background: none;
 	border: none;
 	outline: none;
+}
+.fa-facebook-messenger {
+	color: white !important;
 }

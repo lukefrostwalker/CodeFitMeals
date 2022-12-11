@@ -1,0 +1,110 @@
+/*  */
+/* CALENDAR */
+/*  */
+.title_page {
+    padding-top: 75px;
+    background-color: #294D24;
+}
+li {
+    list-style: none;
+}
+th, td {
+    user-select: none;
+    width: 120px;
+    text-align: center;
+    padding: 2px 2px;
+}
+th {
+    height: 60px;
+}
+td a {
+    text-decoration: none;
+    color: black;
+    display:block;
+    width:100%;
+    border: 1px solid #7fb83e;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+td a:hover {
+    color: black;
+}
+td .disabled {
+    border: none;
+}
+.date_title, .clicked {
+    background-color: rgba(2, 112, 2, 0.85);
+    width: 100%;
+    font-weight: bold;
+}
+.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.nav-item .active {
+    font-weight: bold;
+}
+.nav-item .nav-link:hover {
+    color: black;
+}
+/*  */
+/* MODAL */
+/*  */
+.nutrition {
+    width: 200px;
+}
+.meal_facts li {
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+/* IMPORT */
+/*  */
+.btn-outline-success {
+    color: #7fb83e;
+    border-color: #7fb83e;
+}
+.btn-outline-success:hover {
+    color: white;
+    background-color: #7fb83e;
+    border-color: #7fb83e;
+}
+i {
+    color: #7fb83e;
+}
+.btn-success {
+    background-color: #7fb83e;
+    border-color: #7fb83e;
+}
+.btn-success:hover {
+    background-color: hsl(88, 50%, 34%);
+    border-color: hsl(88, 50%, 34%);
+}
+/*  */
+/* NAVIGATION BAR */
+/*  */
+.navbar-brand, .nav-link {
+    color: #1C4D01;
+}
+.link_animation {
+    display: inline-block;
+    position: relative;
+    color: #1C4D01;
+    /* color: #0087ca; */
+}
+.link_animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1C4D01;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link_animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

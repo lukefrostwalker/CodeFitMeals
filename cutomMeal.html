@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meal Plan</title>
+    <script src="https://kit.fontawesome.com/c636ad103d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/customMeal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  </head>
+  <body>
+        <header>
+            <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="Bootstrap" width="50" height="50"> CodeFitMeals
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <span class="navbar-toggler-icon"></span></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                        <div class="offcanvas-header">
+                            <img src="images/logo.png" alt="Bootstrap" width="50" height="50">
+                            <h5 class="offcanvas-title colored" id="offcanvasNavbarLabel">CodeFitMeals</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="link_animation nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="link_animation nav-item"><a class="nav-link" href="cutomMeal.html">Meal Plan</a></li>
+                                <li class="link_animation nav-item"><a class="nav-link" href="faq.html">FAQS</a></li>
+                                <li class="link_animation nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="title_page text-center">
+            <h1 class="p-2 text-white fw-bold">MEAL PLAN</h1>
+        </div>
+
+
+    <div class="alert alert-success container">
+        <p><strong>HOW TO ORDER:</strong><br>
+        1. Select all the meal dates you want.<br>
+        2. Choose the meals&nbsp;you want for each date.<br>
+        3. Add-to-cart and checkout.</p>
+    </div>
+
+    <section class="calendar d-flex justify-content-center mb-5 container">
+        <div>
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="december-tab" data-bs-toggle="tab" data-bs-target="#december-tab-pane" type="button" role="tab" aria-controls="december-tab-pane" aria-selected="true">
+                        DECEMBER
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="january-tab" data-bs-toggle="tab" data-bs-target="#january-tab-pane" type="button" role="tab" aria-controls="january-tab-pane" aria-selected="false">
+                        JANUARY
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content border" id="myTabContent">
+                <!------------------------------------------------------ DECEMBER  -->
+                <div class="tab-pane fade show active" id="december-tab-pane" role="tabpanel" aria-labelledby="december-tab" tabindex="0">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th title="Sunday">Sun</th>
+                                <th title="Monday">Mon</th>
+                                <th title="Tuesday">Tues</th>
+                                <th title="Wednesday">Wed</th>
+                                <th title="Thursday">Thurs</th>
+                                <th title="Friday">Fri</th>
+                                <th title="Saturday">Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 5, 2022')" data-seq="1" data-date="December 5, 2022" style="display: none;">&nbsp;</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 6, 2022')" data-seq="2" data-date="December 6, 2022" style="display: none;">&nbsp;</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 7, 2022')" data-seq="3" data-date="December 7, 2022" style="display: none;">&nbsp;</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 8, 2022')" data-seq="4" data-date="December 8, 2022" style="display: none;">&nbsp;</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 9, 2022')" data-seq="5" data-date="December 9, 2022" style="display: none;">&nbsp;</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 10, 2022')" data-seq="6" data-date="December 10, 2022" style="display: none;">&nbsp;</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 11, 2022')"data-seq="7" data-date="December 11, 2022" style="display: none;">&nbsp;</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 12, 2022')"data-seq="8" data-date="December 12, 2022">12</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 13, 2022')"data-seq="9" data-date="December 13, 2022">13</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 14, 2022')"data-seq="10" data-date="December 14, 2022">14</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 15, 2022')"data-seq="11" data-date="December 15, 2022">15</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 16, 2022')"data-seq="12" data-date="December 16, 2022">16</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('December 17, 2022')"data-seq="13" data-date="December 17, 2022">17</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                                <td><a class="disabled">&nbsp;</a></td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+                <!------------------------------------------------------ JANUARY  -->
+                <div class="tab-pane fade" href="#" id="january-tab-pane" role="tabpanel" aria-labelledby="january-tab" tabindex="0">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th title="Sunday">Sun</th>
+                                <th title="Monday">Mon</th>
+                                <th title="Tuesday">Tues</th>
+                                <th title="Wednesday">Wed</th>
+                                <th title="Thursday">Thurs</th>
+                                <th title="Friday">Fri</th>
+                                <th title="Saturday">Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> &nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 4, 2022') "data-seq="14" data-date="January 4, 2022">4</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 5, 2022') "data-seq="15" data-date="January 5, 2022">5</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 6, 2022') "data-seq="16" data-date="January 6, 2022">6</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 7, 2022') "data-seq="17" data-date="January 7, 2022">7</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 8, 2022') "data-seq="18" data-date="January 8, 2022">8</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 9, 2022') "data-seq="19" data-date="January 9, 2022">9</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 10, 2022') "data-seq="20" data-date="January 10, 2022">10</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 11, 2022') "data-seq="21" data-date="January 11, 2022">11</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 12, 2022') "data-seq="22" data-date="January 12, 2022">12</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 13, 2022') "data-seq="23" data-date="January 13, 2022">13</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 14, 2022') "data-seq="24" data-date="January 14, 2022">14</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 15, 2022') "data-seq="25" data-date="January 15, 2022">15</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 16, 2022') "data-seq="26" data-date="January 16, 2022">16</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 17, 2022') "data-seq="27" data-date="January 17, 2022">17</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 18, 2022') "data-seq="28" data-date="January 18, 2022">18</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 19, 2022') "data-seq="29" data-date="January 19, 2022">19</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 20, 2022') "data-seq="30" data-date="January 20, 2022">20</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 21, 2022') "data-seq="31" data-date="January 21, 2022">21</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 22, 2022') "data-seq="32" data-date="January 22, 2022">22</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 23, 2022') "data-seq="33" data-date="January 23, 2022">23</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 24, 2022') "data-seq="34" data-date="January 24, 2022">24</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 25, 2022') "data-seq="35" data-date="January 25, 2022">25</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 26, 2022') "data-seq="36" data-date="January 26, 2022">26</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 27, 2022') "data-seq="37" data-date="January 27, 2022">27</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 28, 2022') "data-seq="38" data-date="January 28, 2022">28</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 29, 2022') "data-seq="39" data-date="January 29, 2022">29</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 30, 2022') "data-seq="40" data-date="January 30, 2022">30</a></td>
+                                <td><a href="#" id="dateSelector" onclick="dateSelect('January 31, 2022') "data-seq="41" data-date="January 31, 2022">31</a></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="d-flex flex-column container" id="planContainer">
+    </section>
+
+    <section class="details container" id="details">
+            <div class="col-md-12 border">
+                <div class="parent-box">
+                        <div class="order-total mb-3">
+                        <b>Order Total</b>
+                        <div class="order-total-details-box border">
+                            <div class="d-flex">
+                                <div class="px-2 w-100">
+                                    Subtotal
+                                </div>
+                                <div class="px-2 flex-shrink-1 sub-total" id="subTotal">
+                                    0.00
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="px-2 w-100">
+                                    Delivery Fee
+                                </div>
+                                <div class="px-2 flex-shrink-1 delivery-fee">
+                                    FREE
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="px-2 w-100">
+                                    <b>TOTAL AMOUNT</b>
+                                </div>
+                                <div class="px-2 flex-shrink-1">
+                                    <b id="totalAmount">0.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-2">
+                    <button class="btn btn-outline-success fw-bold" type="submit" id="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+    </section>
+
+<!--
+    TO ANOTHER PAGE
+-->
+    <section id="cart">
+
+    </section>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="js/meals.js"></script>
+    <script src="js/index.js"></script>
+    </div>
+  </body>
+</html>

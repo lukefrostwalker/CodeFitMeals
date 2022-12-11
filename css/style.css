@@ -76,6 +76,9 @@ i {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+.navbar-nav .active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
 /*  */
 /* HERO */
 /*  */
@@ -125,6 +128,9 @@ i {
 /*  */
 /* SECTION STEPS */
 /*  */
+.section-steps {
+    background-color: #F5F2E5;
+}
 .app-screen {
     width: 40%;
 }
@@ -165,7 +171,7 @@ cite img {
 .testimonanial_background {
     background: radial-gradient(ellipse at center, rgba(0,0,0,0.7) 100%, rgba(0,0,0,0) 100%, rgba(0,0,0,0.9) 100%), url(../images/back-customers.jpg) no-repeat center center scroll;    
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
     /* margin-top: 55px; */
     display: block;
 }
@@ -186,6 +192,12 @@ blockquote {
 .plan-box li {
     list-style: none;
     margin-bottom: 10px;
+}
+/*  */
+/* SECTION CONTACT */
+/*  */
+.section-contact {
+    background-color: #F5F2E5;
 }
 /*  */
 /* FOOTER */
