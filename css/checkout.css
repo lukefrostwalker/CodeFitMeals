@@ -56,11 +56,11 @@ nav a:hover {
     padding: 0 30px;
     border: 1px solid lightgrey;
     border-radius: 10px;
-    background-color: #d9ebc7;
+    background-color: #F5F2E5;
 }
 h3 {
     text-align: center;
-    color: #7fb83e;
+    color: #294D24;
 }
 /* .row1 {
     padding: 20px;
@@ -75,7 +75,7 @@ input{
     border-radius: 5px;
 }
 .inputLabel {
-    color: #7fb83e;
+    color: #294D24;
 }
 .inputBorder {
     margin-bottom: 15px;
