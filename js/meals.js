@@ -15,7 +15,7 @@ const meals = [
         <li><span>Carbohydrate</span> <span>1 g</span></li>
         <li><span>Potassium</span> <span>390 mg</span></li>
         </ul>`,
-        imgSrc: "../img/beef-tenderloin.png",
+        imgSrc: "/img/beef-tenderloin.png",
         ingredients: "Pork Tenderloin, Garlic, Ginger, Fish Sauce, Lite Soy Sauce, Sugar, Sesame Oil",
     },
     {
@@ -34,7 +34,7 @@ const meals = [
         <li><span>Carbohydrate</span> <span>26 g</span></li>
         <li><span>Potassium</span> <span>424 mg</span></li>
         </ul>`,
-        imgSrc: "../img/turkey-club-burger.jpg",
+        imgSrc: "img/turkey-club-burger.jpg",
         ingredients: '<span class="fst-italic">For turkey burgers:</span><p>99% Fat-Free Ground Turkey, Scallions, Ground Black Pepper, Egg, Olive Oil</p><span class="fst-italic">For spread:</span><p>Light Mayonnaise, Dijon Mustard</p><span class="fst-italic">For toppings:</span><p>Arugula, Portabella Mushroom, Whole-Wheat Hamburger Buns</p>'
     },
     {
