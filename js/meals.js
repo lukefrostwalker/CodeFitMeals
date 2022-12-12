@@ -15,7 +15,7 @@ const meals = [
         <li><span>Carbohydrate</span> <span>1 g</span></li>
         <li><span>Potassium</span> <span>390 mg</span></li>
         </ul>`,
-        imgSrc: "/img/beef-tenderloin.png",
+        imgSrc: "img/beef-tenderloin.png",
         ingredients: "Pork Tenderloin, Garlic, Ginger, Fish Sauce, Lite Soy Sauce, Sugar, Sesame Oil",
     },
     {
@@ -53,7 +53,7 @@ const meals = [
         <li><span>Carbohydrate</span> <span>15 g</span></li>
         <li><span>Potassium</span> <span>874 mg</span></li>
         </ul>`,
-        imgSrc: "../img/tuna.jpg",
+        imgSrc: "img/tuna.jpg",
         ingredients: '<span class="fst-italic">Main:</span><p>Olive Oil, Garlic, Lemon Juice, Oregano, Tuna Steaks</p><span class="fst-italic">For salad:</span><p>Low-Sodium Chickpeas, Spinach, Lemon Juice, Tomato, Salt, Ground Black Pepper</p>',
     },
     {
@@ -72,7 +72,7 @@ const meals = [
         <li><span>Carbohydrate</span> <span>63 g</span></li>
         <li><span>Potassium</span> <span>576 mg</span></li>
         </ul>`,
-        imgSrc: "../img/pasta.jpg",
+        imgSrc: "img/pasta.jpg",
         ingredients: "Whole-Wheat Fusilli(spiral), Cherry Tomatoes, Green Bell Pepper, Red Onion, Zucchine, Low-Sodium Chickpeas, Fresh Basil, Salt, Ground Black Pepper, Extra Virgin Olive Oil, Balsamic Vinegar, Parmesan Cheese",
     }
 ]
